@@ -4,9 +4,11 @@ const colors = require('colors');
 var targetBaseUrl = process.env. REDIRECT_URL;
 
 
-// const targetBaseUrl = 'https://dev.creditculture.sg';
+// const targetBaseUrl = 'https://wwww.skilleto.sg';
 function handleRedirect(req, res) {
-  const targetUrl = targetBaseUrl + '/#'+ req.originalUrl;
+  // const targetUrl = targetBaseUrl + '/#'+ req.originalUrl;
+  const targetUrl = targetBaseUrl + req.originalUrl;
+
   console.log("original url",req.originalUrl);
   res.redirect(targetUrl);
   console.log ("redirect URL",targetUrl.green);
