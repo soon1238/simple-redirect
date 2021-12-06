@@ -1,3 +1,3 @@
-export REDIRECT_URL=https://future.tsscore.com/trainee/en
+set REDIRECT_URL=http://localhost:4201
 
 node index.js
